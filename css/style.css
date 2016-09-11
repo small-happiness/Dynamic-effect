@@ -1,0 +1,197 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Microsoft Yahei';
+}
+
+#content {
+    width: 1140px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.warp {
+    width: 95%;
+    float: right;
+}
+
+/*section start*/
+.myjustify{
+    display: inline-block;
+    width: 100%;
+}
+/*一个块*/
+section > section {
+    display: inline-block;
+    margin-top: 30px;
+    width: 360px;
+    height: 410px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*隐藏部分*/
+section > div.warp {
+    height: 100%;
+    background-color: #FCE4EC;
+    overflow: hidden;
+    position: relative;
+}
+
+/*分享链接点击*/
+.link {
+    width: 282px;
+    background-color: #F8BBD0;
+    padding: 16px 30px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.link i {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    height: 52px;
+    line-height: 52px;
+    background-color: #880E4F;
+}
+.link i:nth-of-type(1){
+    top: 40px;
+}
+.link i:nth-of-type(2){
+    top: 50px;
+}
+.link i:nth-of-type(3){
+    top: 60px;
+}
+.link i:nth-of-type(4){
+    top: 70px;
+}
+
+    /*点击效果部分*/
+div.warp{
+    /*全部向下移*/
+    /*margin-top: 410px;*/
+}
+
+/*文本内容*/
+
+div.warp article, div.warp article + p {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    right: 0px;
+}
+
+div.warp article {
+    bottom: 0px;
+    top: 50px;
+    margin-top: 140px;
+    text-align: left;
+    color: #37474F;
+    line-height: 3;
+}
+
+div.warp article::first-letter {
+    text-transform: uppercase;
+}
+
+div.warp article + p {
+    bottom: 100px;
+    color: #880E4F;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+/*点赞*/
+.thumbs i {
+    position: absolute;
+    /*初始状态*/
+    /*top: 15%;
+    border: 4px solid #FCE4EC;*/
+    top: 5%;
+    border: 4px solid white;
+    right: 5%;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #E91E63;
+    text-align: center;
+    line-height: 44px;
+    color: white;
+}
+
+/*图片和标题的静态样式*/
+figure {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-transform: capitalize;
+}
+
+figcaption {
+   /* padding: 17px;
+    padding-left: 25%;*/
+    padding: 17px 90px;
+    padding-left: 5%;
+    background-color: #E91E63;
+    height: 56px;
+    width: 253px;
+    position: absolute;
+    top: 330px;
+    left: 0;
+}
+
+figcaption h2 {
+    font-weight: normal;
+}
+
+figcaption p {
+    line-height: 2;
+}
+
+figure div:nth-of-type(2) {
+    margin-left: 5%;
+    width: 95%;
+    overflow: hidden;
+}
+
+figure div > img {
+    width: 100%;
+    float: right;
+}
+
+/*三角形阴影部分 原始状态*/
+.after {
+    position: absolute;
+    top: 396px;
+    left: 4px;
+    width: 0px;
+    height: 0px;
+    border: 14px solid transparent;
+    border-left-color: #880E4F;
+    border-radius: 0px;
+    transform: rotate(-45deg);
+}
+
+.before {
+    position: absolute;
+    top: 316px;
+    left: 4px;
+    width: 0px;
+    height: 0px;
+    border: 14px solid transparent;
+    border-left-color: #880E4F;
+    border-radius: 0px;
+    transform: rotate(45deg);
+}
+
+
+
